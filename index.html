@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MEGA 100 FM - Where Musi Matters</title>
+  <title>MEGA 100 FM - Where Music Matters</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="Mega 100 Logo - Transparent.png">
   <style>
     body {
       margin: 0;
@@ -45,7 +46,7 @@
     .hero {
       text-align: center;
       padding: 100px 20px 60px;
-      background: url("100.jpg") no-repeat center center;
+      background: url("Studio.webp") no-repeat center center;
       background-size: cover;
       position: relative;
       animation: fadeIn 3s ease-in;
@@ -169,6 +170,29 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+	  /* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: 0.3s;
+}
+	  whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+}
   </style>
 </head>
 <body>
@@ -211,27 +235,34 @@
 <div class="content">
   <section id="about" class="section">
     <h2>About Us</h2>
-    <p>Mega 100 FM is a leading youth-focused radio station based in Gulu City, Northern Uganda. Broadcasting on 100.0 MHz, the station delivers a vibrant mix of music, entertainment, news, and community-focused programming that resonates with young people across the region.
+    <p>Turn up the volume — Mega 100 FM is where Northern Uganda’s youth come alive! Broadcasting loud and proud on 100.0 MHz from the heart of Gulu City, we bring the vibes, the voice, and the vision of a new generation.
 
-Since its establishment, Mega 100 FM has become a trusted Northern Uganda’s energetic and creative radio for youth. With a blend of urban hits, sports, and interactive talk shows, the station offers an authentic platform for expression, education, and entertainment.
+From the hottest urban hits to electrifying sports talk, trending news, and interactive shows that keep you locked in — Mega 100 FM is more than just radio. It’s the soundtrack of the streets, the pulse of the youth, and the creative heartbeat of Northern Uganda.
 
+Since day one, we’ve built a platform where young voices are heard, talents are celebrated, and conversations spark change. We inform. We inspire. We entertain. And most of all — we unite.
 
-At Mega 100 FM, we believe in the power of radio to inform, inspire, and unite communities. We are not just a station — we are a movement driving the rhythm of Northern Uganda’s new generation.
+This isn’t just a station.
+This is a movement.
+This is the rhythm of the new generation. 🎶🔥
 
-Frequency: 100.0 MHz
-Location: Olya Road, Gulu City, Uganda.</p>
+📡 Frequency: 100.0 MHz
+📍 Location: Olya Road, Gulu City, Uganda
+
+Mega 100 FM — Feel the Energy. Live the Vibe.</p>
   </section>
 
   <section id="gallery" class="section">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-	 <div class="gallery-item"><img src="Charity.jpg" alt="Festo Ocan"><p class="caption">Charity - News</p></div>
+		<div class="gallery-item"><img src="Inno.jpg" alt="Inno Boy"><p class="caption">Inno Boy - Sport/Love @ 100</p></div>
+	 <div class="gallery-item"><img src="Valencia.jpg" alt="Valencia"><p class="caption">Valencia - Hotbreakfast/Sports</p></div>
       <div class="gallery-item"><img src="Dakker.jpg" alt="Darker"><p class="caption">Dak-ker - Hotbreakfast</p></div>
 		<div class="gallery-item"><img src="Mao.jpg" alt="Norbert Mao"><p class="caption">Norbert Mao - Sport/Lunch @ 100</p></div>
-		<div class="gallery-item"><img src="Inno.jpg" alt="Inno Boy"><p class="caption">Inno Boy - Sport/Love @ 100</p></div>
+		
       <div class="gallery-item"><img src="Dj Skizzy.jpg" alt="Dj Skizzy"><p class="caption">Dj Skizzy - Mega Mix</p></div>
-		<div class="gallery-item"><img src="Valencia.jpg" alt="Valencia"><p class="caption">Valencia - Hotbreakfast/Sports</p></div>
+		
       <div class="gallery-item"><img src="Jacob.jpg" alt="Jacob Olwoc"><p class="caption">Jacob Olwoc - Talkshow Host/News</p></div>
+		<div class="gallery-item"><img src="Charity.jpg" alt="Festo Ocan"><p class="caption">Charity - News</p></div>
       
       <div class="gallery-item"><img src="Festo.jpg" alt="Festo Ocan"><p class="caption">Festo Ocan - Makerting Manager @ 100 </p></div>
 	  
@@ -249,7 +280,7 @@ Location: Olya Road, Gulu City, Uganda.</p>
 </div>
 
 <footer>
-  <p>&copy; 2025 MEGA 100 FM. Made by Dj Seeker. All rights reserved.</p>
+  <p>&copy; 2026 MEGA 100 FM.All rights reserved.</p>
 </footer>
 
 <script>
@@ -310,6 +341,12 @@ Location: Olya Road, Gulu City, Uganda.</p>
 	{ start: "20:00", end: "00:00", show: "SATURDAY DANCE FORCE" },
     { start: "60:00", end: "08:00", show: "GOSPLE MINUTES" },
   ];
+	<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/256393228680" 
+   target="_blank" 
+   class="whatsapp-float">
+   💬
+</a>
 
   // Convert HH:MM to minutes
   function toMinutes(time) {
